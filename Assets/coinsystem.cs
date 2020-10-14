@@ -16,7 +16,7 @@ public class coinsystem : MonoBehaviour
         
 
     }
-
+    //ef spilarinn snertir penigin þá er bætt við stigum og peningurinn eyðilagður
     private void OnTriggerEnter(Collider other)
     {
         if (other.name == "player")

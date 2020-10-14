@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+// kóði til að láta peninginn snúast
 public class rotate : MonoBehaviour
 {
 

@@ -11,7 +11,7 @@ public class cube : MonoBehaviour {
     private void Start() {
         rb = GetComponent<Rigidbody>();
     }
-
+    //kóði til að láta spilarann hreyfa sig
     void Update() {
         //transform.Translate(Input.GetAxis("Horizontal") * Time.deltaTime * 15f, 0f, 0f);
 
@@ -20,12 +20,13 @@ public class cube : MonoBehaviour {
 
         transform.Translate(horizontal, 0, Vertical);
 
+        //kóði til að segja hversu sterkt spilarinn meigi hoppa
         if (Input.GetButtonDown("Jump") && cubeIsOnTheGround) {
             rb.AddForce(new Vector3(0, 5, 0), ForceMode.Impulse);
             cubeIsOnTheGround = false;
         }
-    } 
-    
+    }
+    //kóði til að tékka hvort spilarinn meigi hoppa eftir að hafa snert platform eða gólfið
     private void OnCollisionEnter(Collision collision) { 
         if(collision.gameObject.name == "Floor")
 

@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-
+//camerann mun fylgja spilarnum á sértsöku angle sama hvernig spilarinn er og snýr.
 public class camera : MonoBehaviour
 {
     public Transform target;
